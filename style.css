@@ -1,0 +1,143 @@
+ /* TODO PREMESSE */
+    *{     
+        --coloreTema1:#807a55; --coloreTema2:#558058; --coloreTema3:#695580;
+        --coloreScuro:#202020; --coloreIntermedio:#808080; --coloreChiaro:#dbdbdb;
+        background: transparent; color: var(--coloreChiaro); font-size:20px;
+        transition:0.3s;
+        padding:5px; margin:0;
+        font-family:'Times New Roman', Times, serif;
+    }
+    html{
+        padding:0;
+        background: repeating-linear-gradient(var(--coloreScuro),#000);
+    }
+    body{
+        padding:0;
+        min-height:100vh;
+    }
+
+ /* TODO LAYOUT */
+    header{
+        padding:500px 10px 20px 30px;
+        background: url(https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081_1280.jpg);
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-attachment: fixed;
+    }
+    nav{
+        position:sticky; top:0;
+
+        background:var(--coloreTema1);
+        padding:0px 10px;
+    }nav,nav>div{
+        display: flex; 
+        justify-content: space-between; 
+        align-items:center;
+    }nav>div>*{
+        border-radius: 5px;
+        padding:10px;
+        margin:0 10px;
+    }
+    section,footer{
+        display: flex;
+        justify-content: center;
+        padding:0 0px;
+    }
+        column{
+            padding:20px 0;
+        }
+        article{
+            min-width:400px;
+            border:2px solid transparent;
+        }article:hover{border-left:var(--coloreTema1) solid 2px;}
+        aside{
+            padding:0;
+            width:300px;
+        }
+        div{
+            padding:0;
+        }
+    footer{
+        padding:10px 400px;
+    }footer>column{
+        padding:10px;
+    }
+
+ /* TODO COMPONENTI */
+    p{
+        font-size:20px;
+    }
+    h1{
+        font-size:80px;
+        color:var(--coloreTema1);
+        border-radius:0; 
+        padding-bottom:10px;
+    }
+    h2{
+        font-size:60px;
+        margin:30px 0 10px;
+    }
+    h3{
+        font-size:40px;
+        border-radius:0; border-bottom:solid 3px;
+        margin:30px 0 20px;
+    }
+    button{
+        font-size:20px;
+        border:0; 
+        padding:5px;
+    }button:hover{ background:var(--coloreChiaro); color:var(--coloreScuro);}
+    ol,ul{
+        padding-left:20px;
+    }
+    a{
+        color:var(--coloreTema1);
+        text-decoration:none;
+    }a:hover{
+        color:var(--coloreIntermedio);
+    }
+    aside>a{
+        display: block;
+        text-decoration:none;
+        padding:10px;
+    }aside>a:hover{
+        background:black;
+    }
+    input{
+        background:var(--coloreChiaro); 
+        
+        border:0;
+        border-radius:5px;
+    }input:hover{background:var(--coloreScuro);}
+
+ /* TODO INDIVIDUALI  */
+    #logo{
+        font-size:30px;
+        padding:15px;
+    }
+    #accedi,#iscrivi{
+        display: block;
+        background:var(--coloreScuro); color:var(--coloreChiaro);
+        border-radius:0;
+        padding:10px;  margin:0;
+    }#accedi:hover,#iscrivi:hover{ 
+        background:var(--coloreChiaro); color:var(--coloreTema1);
+    }
+    #accedi{border-top-left-radius:20px; }
+    #iscrivi{border-bottom-right-radius:20px;}
+
+    #search{
+        border-radius:50px;
+        padding:0 10px;
+        background: var(--coloreChiaro);
+    }
+    #search{
+        padding: 0; margin: 0;
+        left: 300px;
+    }#search{
+        color:var(--coloreTema3);
+        background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAg0lEQVR4AWLwySwcEAxotw4wAAiBKIBeZY6wR5mbzg3XztLAZ5f4ffBjUKXXqJJhw4b1cJfsqI57YtXzGDzgTxQd7pKQYaz2gAUlG65Bt/oJ8GQUH/0xYzjwxqR0WJ+xfo/Fp5pwjxHXvFzQdsne6hdDnA9zcISpeElgwEsG+wdi2PADY3DfLvm/H5cAAAAASUVORK5CYII=);
+        background-position: left; 
+        background-repeat: no-repeat; 
+    }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Racoon</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="/script.js"></script>
+    </head>
+    <body>
+        <section>
+            <form action="/home.html">
+                <h3>Inserisci i dati</h2>
+                <section>
+                    <column>
+                        <p>Username</p>
+                        <input type="text" placeholder="">
+                        <p>Email</p>
+                        <input type="email" placeholder="" required>
+                        <p>Password</p>
+                        <input type="password" placeholder="" required>
+                        <div><a href="">Hai dimenticato la password?</a></div>
+                        
+                    </column>
+                </section>
+                <button type="submit">Invio</button>
+            </form>            
+        </section>
+
+    </body>
+</html>
+<style>
+    form{
+        padding:20px; margin-top:40px;
+        background:var(--coloreSfondo);
+        border-radius:10px;
+    }
+        form column{
+            padding: 10px;
+        }
+            form input{
+                display: block;
+                margin-bottom:10px;
+                border:1px solid;
+                background:transparent;
+            }
+        form button{
+            background: var(--coloreTema1);
+            color: var(--coloreSfondo);
+            border-radius: 5px;
+        }
+</style>
