@@ -2,7 +2,9 @@
     *{     
         --coloreTema1:#807a55; --coloreTema2:#558058; --coloreTema3:#695580;
         --coloreScuro:#202020; --coloreIntermedio:#808080; --coloreChiaro:#dbdbdb;
-        background: transparent; color: var(--coloreChiaro); font-size:20px;
+        background: transparent; 
+        color: var(--coloreChiaro); 
+        font-size:20px;
         transition:0.3s;
         padding:5px; margin:0;
         font-family:'Times New Roman', Times, serif;
@@ -17,6 +19,7 @@
     }
 
  /* TODO LAYOUT */
+ /* TODO - HEADER */
     header{
         padding:500px 10px 20px 30px;
         background: url(https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081_1280.jpg);
@@ -25,20 +28,18 @@
         background-size: cover; 
         background-attachment: fixed;
     }
-    nav{
-        position:sticky; top:0;
-
-        background:var(--coloreTema1);
-        padding:0px 10px;
+ /* TODO - NAV */
+ nav{
+     position:sticky; top:0;
+     
+     background:var(--coloreTema1);
+     padding:10px;
     }nav,nav>div{
         display: flex; 
         justify-content: space-between; 
         align-items:center;
-    }nav>div>*{
-        border-radius: 5px;
-        padding:10px;
-        margin:0 10px;
     }
+ /* TODO - SECTION */
     section,footer{
         display: flex;
         justify-content: center;
@@ -58,13 +59,15 @@
         div{
             padding:0;
         }
+ /* TODO - FOOTER */
     footer{
         padding:10px 400px;
     }footer>column{
         padding:10px;
     }
 
- /* TODO COMPONENTI */
+ /* TODO COMPONENTI*/
+ /* TODO - TEXT*/
     p{
         font-size:20px;
     }
@@ -83,61 +86,88 @@
         border-radius:0; border-bottom:solid 3px;
         margin:30px 0 20px;
     }
+
+ /* TODO - BUTTON*/
     button{
-        font-size:20px;
         border:0; 
         padding:5px;
-    }button:hover{ background:var(--coloreChiaro); color:var(--coloreScuro);}
+    }button:hover{ 
+        background:var(--coloreChiaro); 
+        color:var(--coloreScuro);
+    }
+
     ol,ul{
         padding-left:20px;
     }
-    a{
+
+ /* TODO - ANCHOR*/
+ a{
         color:var(--coloreTema1);
         text-decoration:none;
-    }a:hover{
-        color:var(--coloreIntermedio);
+        cursor: pointer;
+    }p a:hover{
+        color:var(--coloreChiaro);
     }
+
+    nav a{
+        color: var(--coloreScuro);
+    }nav a:hover{
+        background:var(--coloreChiaro);
+    }nav>div>*{
+        border-radius: 5px;
+        padding:10px;
+        margin:0 10px;
+    }
+
     aside>a{
         display: block;
-        text-decoration:none;
         padding:10px;
     }aside>a:hover{
-        background:black;
+        background:var(--coloreIntermedio);
+        color:var(--coloreChiaro);
     }
+
+ /* TODO - INPUT*/
     input{
         background:var(--coloreChiaro); 
-        
+        color:var(--coloreScuro);
+        padding: 5px 10px;
         border:0;
         border-radius:5px;
-    }input:hover{background:var(--coloreScuro);}
+    }input:hover{
+        background:var(--coloreIntermedio);
+    }input::placeholder{
+        color:var(--coloreScuro);
+    }
 
  /* TODO INDIVIDUALI  */
-    #logo{
-        font-size:30px;
-        padding:15px;
-    }
+ /* TODO - LOGIN*/
     #accedi,#iscrivi{
         display: block;
-        background:var(--coloreScuro); color:var(--coloreChiaro);
+        background:var(--coloreScuro); 
+        color:var(--coloreTema1);
         border-radius:0;
         padding:10px;  margin:0;
     }#accedi:hover,#iscrivi:hover{ 
-        background:var(--coloreChiaro); color:var(--coloreTema1);
+        background:var(--coloreChiaro); 
+        color:var(--coloreScuro);
     }
     #accedi{border-top-left-radius:20px; }
     #iscrivi{border-bottom-right-radius:20px;}
-
+ /* TODO - SEARCH BAR*/
     #search{
         border-radius:50px;
-        padding:0 10px;
-        background: var(--coloreChiaro);
+        padding:10px 20px;
+        /* background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAg0lEQVR4AWLwySwcEAxotw4wAAiBKIBeZY6wR5mbzg3XztLAZ5f4ffBjUKXXqJJhw4b1cJfsqI57YtXzGDzgTxQd7pKQYaz2gAUlG65Bt/oJ8GQUH/0xYzjwxqR0WJ+xfo/Fp5pwjxHXvFzQdsne6hdDnA9zcISpeElgwEsG+wdi2PADY3DfLvm/H5cAAAAASUVORK5CYII=); */
     }
-    #search{
-        padding: 0; margin: 0;
-        left: 300px;
-    }#search{
-        color:var(--coloreTema3);
-        background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAg0lEQVR4AWLwySwcEAxotw4wAAiBKIBeZY6wR5mbzg3XztLAZ5f4ffBjUKXXqJJhw4b1cJfsqI57YtXzGDzgTxQd7pKQYaz2gAUlG65Bt/oJ8GQUH/0xYzjwxqR0WJ+xfo/Fp5pwjxHXvFzQdsne6hdDnA9zcISpeElgwEsG+wdi2PADY3DfLvm/H5cAAAAASUVORK5CYII=);
-        background-position: left; 
-        background-repeat: no-repeat; 
+ /* TODO - ANIMATION*/
+    @keyframes animation1 {
+        0%   {color:var(--coloreTema1);}
+        33%  {color:var(--coloreTema2);}
+        66%  {color:var(--coloreTema3);}
+        100%  {color:var(--coloreTema1);}
+    }#animation1{
+        animation-name: animation1;    
+        animation-duration: 30s; 
+        animation-iteration-count:infinite;
     }

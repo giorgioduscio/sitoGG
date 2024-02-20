@@ -1,12 +1,12 @@
 document.body.querySelector("nav").innerHTML=`
     <div>
-        <button id="logo">☰</button>
-        <button>Articoli</button>
-        <button>Articoli</button>
-        <button>Articoli</button>
+        <a href="/home.html">☰</a>
+        <a>Articoli</a>
+        <a>About</a>
+        <a>Prodotti</a>
     </div>
-    <div id="search">
-        <input type="text" name="search" placeholder="🔍 Search"> 
+    <div>
+        <input type="text" name="search" id="search" placeholder="🔍 Search"> 
     </div>
     <div>
         <a href="/form.html" id="accedi">Accedi</a>
