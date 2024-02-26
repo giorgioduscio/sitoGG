@@ -13,3 +13,18 @@ document.body.querySelector("nav").innerHTML=`
         <a href="/form.html" id="iscrivi">Iscriviti</a>
     </div>
 `;
+
+document.body.querySelector("footer").innerHTML=`
+    <column>
+        <h3>Lavora con noi</h3>
+        <p><strong>Contatti</strong></p>
+        <p>Information</p>
+        <p>Information</p>
+    </column>
+    <column>
+        <h3>Lavora con noi</h3>
+        <p><strong>Contatti</strong></p>
+        <p>Information</p>
+        <p>Information</p>
+    </column>
+`;

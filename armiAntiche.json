@@ -57,7 +57,7 @@
             "peso":0.7
         },
         {
-            "nome":"shamshir",
+            "nome":"Shamshir",
             "periodo":900,
             "localita":"Persia",
             "lunghezza":100, 
@@ -66,14 +66,14 @@
     ],
     "manoEMezza":[
        {
-            "nome":"uchigatana",
+            "nome":"Uchigatana",
             "periodo":1300,
             "localita":"Giappone",
             "lunghezza":90, 
             "peso":1
         },
         {
-            "nome":"macuahuitl",
+            "nome":"Macuahuitl",
             "periodo":900,
             "localita":"Aztechi",
             "lunghezza":100, 
