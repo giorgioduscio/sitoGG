@@ -22,6 +22,7 @@
  /* TODO - HEADER */
     header{
         padding:500px 10px 20px 30px;
+        display:none;
         background: url(https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081_1280.jpg);
         background-position: center; 
         background-repeat: no-repeat; 
@@ -31,19 +32,18 @@
  /* TODO - NAV */
  nav{
      position:sticky; top:0;
-     
      background:var(--coloreTema1);
-     padding:10px;
     }nav,nav>div{
         display: flex; 
         justify-content: space-between; 
         align-items:center;
+        padding:0;
     }
+
  /* TODO - SECTION */
     section,footer{
         display: flex;
         justify-content: center;
-        padding:0 0px;
     }
         column{
             padding:20px 0;
@@ -100,7 +100,7 @@
     }
 
  /* TODO - ANCHOR*/
- a{
+    a{
         color:var(--coloreTema1);
         text-decoration:none;
         cursor: pointer;
@@ -113,7 +113,6 @@
     }nav a:hover{
         background:var(--coloreChiaro);
     }nav>div>*{
-        border-radius: 5px;
         padding:10px;
         margin:0 10px;
     }
@@ -126,6 +125,10 @@
         color:var(--coloreChiaro);
     }
 
+ /* TODO - IMMAGINI*/
+ nav img{
+    height:30px;
+}
  /* TODO - INPUT*/
     input{
         background:var(--coloreChiaro); 
@@ -141,23 +144,22 @@
 
  /* TODO INDIVIDUALI  */
  /* TODO - LOGIN*/
-    #accedi,#iscrivi{
-        display: block;
-        background:var(--coloreScuro); 
-        color:var(--coloreTema1);
-        border-radius:0;
-        padding:10px;  margin:0;
-    }#accedi:hover,#iscrivi:hover{ 
-        background:var(--coloreChiaro); 
-        color:var(--coloreScuro);
-    }
-    #accedi{border-top-left-radius:20px; }
-    #iscrivi{border-bottom-right-radius:20px;}
+
  /* TODO - SEARCH BAR*/
-    #search{
+    div#search{
         border-radius:50px;
-        padding:10px 20px;
-        /* background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAg0lEQVR4AWLwySwcEAxotw4wAAiBKIBeZY6wR5mbzg3XztLAZ5f4ffBjUKXXqJJhw4b1cJfsqI57YtXzGDzgTxQd7pKQYaz2gAUlG65Bt/oJ8GQUH/0xYzjwxqR0WJ+xfo/Fp5pwjxHXvFzQdsne6hdDnA9zcISpeElgwEsG+wdi2PADY3DfLvm/H5cAAAAASUVORK5CYII=); */
+        background:var(--coloreChiaro);
+    }div#search:hover{
+        background:var(--coloreIntermedio);
+    }
+    input#search{
+        border-radius:50px;
+        padding:10px 30px;
+        margin: 0;
+
+        background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAg0lEQVR4AWLwySwcEAxotw4wAAiBKIBeZY6wR5mbzg3XztLAZ5f4ffBjUKXXqJJhw4b1cJfsqI57YtXzGDzgTxQd7pKQYaz2gAUlG65Bt/oJ8GQUH/0xYzjwxqR0WJ+xfo/Fp5pwjxHXvFzQdsne6hdDnA9zcISpeElgwEsG+wdi2PADY3DfLvm/H5cAAAAASUVORK5CYII=);
+        background-position:left;
+        background-repeat:no-repeat;
     }
  /* TODO - ANIMATION*/
     @keyframes animation1 {
@@ -170,3 +172,8 @@
         animation-duration: 30s; 
         animation-iteration-count:infinite;
     }
+
+
+
+
+

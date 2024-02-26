@@ -1,0 +1,27 @@
+ /* optimize applica il CSS fino alla larghezza di 400px */
+@media screen and (max-width: 400px) {
+     /* TODO - HEADER */
+    header{
+        display: none;
+    }
+     /* TODO - NAV */
+    nav *, footer *{
+        font-size: 50px;
+    }
+    nav img{
+        height:100px;
+    }
+     /* TODO - SECTION */
+    column#left,column#right{
+        display:none;
+    }
+    column#center{
+        padding: 20px;
+    }
+    /* TODO - SEARCH BAR*/
+    input#search{
+        width:100%;
+        background-size:contain;
+        padding:10px 80px;
+    }
+}
